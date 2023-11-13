@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IDamageable
 {
     public int maxEnergy;
     public int damage;
@@ -132,7 +132,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            other.gameObject.GetComponent<IDamageable>().TakeEnergy(damage);
         }
     }
     
@@ -140,7 +140,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            other.gameObject.GetComponent<IDamageable>().TakeEnergy(damage);
         }
     }
 }
