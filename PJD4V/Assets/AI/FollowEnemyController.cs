@@ -114,6 +114,8 @@ namespace AI
             
             
             Gizmos.DrawSphere(patrolCenter, 0.5f);
+            
+            Gizmos.DrawWireSphere(transform.position, 5f);
         }
     }
 }
