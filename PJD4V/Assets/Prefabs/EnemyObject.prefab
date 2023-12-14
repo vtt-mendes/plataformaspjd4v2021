@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 2281895691370079391}
   - component: {fileID: 2281895691370079388}
   - component: {fileID: 2281895691370079386}
-  - component: {fileID: 2281895691370079389}
+  - component: {fileID: 2281895693186534744}
   m_Layer: 0
   m_Name: ZombieController
   m_TagString: Enemy
@@ -172,10 +172,10 @@ MonoBehaviour:
   - {fileID: 2281895691453935384}
   - {fileID: 2281895691327710225}
   - {fileID: 2281895692612022564}
-  childAnim: {fileID: 0}
+  childAnim: {fileID: 7398732196832535671}
   patrolCenter: {x: -7.626667, y: 10.466666, z: 0}
---- !u!61 &2281895691370079389
-BoxCollider2D:
+--- !u!58 &2281895693186534744
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -187,19 +187,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09217024, y: -0.12425667}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4, y: 0.4}
-    oldSize: {x: 2.15, y: 2.595}
-    newSize: {x: 6.8, y: 4.72}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.14556503, y: -0.13732553}
   serializedVersion: 2
-  m_Size: {x: 0.5038624, y: 1.4806446}
-  m_EdgeRadius: 0
+  m_Radius: 0.66753674
 --- !u!1 &2281895691453935387
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +280,7 @@ Transform:
   m_GameObject: {fileID: 7398732196832535668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1499797913162802226}
@@ -338,7 +328,7 @@ SpriteRenderer:
   m_SortingLayerID: -1207455789
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 30a605a6068f14a0596e5f6407223fe5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc6bf406f255249638a0734e815a9221, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -359,7 +349,7 @@ Animator:
   m_GameObject: {fileID: 7398732196832535668}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2fad0e71fed016c4dbaee66c540028a1, type: 2}
+  m_Controller: {fileID: 9100000, guid: fda2e38980985492588dd299bef02208, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
